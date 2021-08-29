@@ -9,5 +9,5 @@ public boolean evenlySpaced(int a, int b, int c) {
       maxOfTwo = Math.max(a,c);
     }
   }
-  return Math.abs(maxOfThree - maxOfTwo) == Math.abs(maxOfTwo - minOfThree); // difference of maxValue - middleValue == middleValue - minValue
+  return maxOfThree - maxOfTwo == maxOfTwo - minOfThree; // dont need Math.abs() here because maxOfThree>maxOfTwo && maxOfTwo > minOfThree 
 }
