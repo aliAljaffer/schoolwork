@@ -6,5 +6,5 @@ public String withoutString(String base, String remove) {
     if (removeCandidate.equalsIgnoreCase(remove)) {
       return withoutString(base.substring(remove.length()), remove);
     }
-    return hey.charAt(0) + withoutString(base.substring(1), remove);
+    return removeCandidate.charAt(0) + withoutString(base.substring(1), remove);
 }
